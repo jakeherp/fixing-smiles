@@ -1,3 +1,9 @@
+let plugins = ['tailwindcss', 'postcss-preset-env'];
+
+if (process.env.NODE_ENV === 'production') {
+	plugins = ['tailwindcss', purgecss, 'postcss-preset-env'];
+}
+
 const purgecss = [
 	'@fullhuman/postcss-purgecss',
 	{
@@ -18,9 +24,5 @@ const purgecss = [
 	},
 ];
 module.exports = {
-	plugins: [
-		'tailwindcss',
-		process.env.NODE_ENV === 'production' ? purgecss : undefined,
-		'postcss-preset-env',
-	],
+	plugins,
 };
