@@ -13,6 +13,7 @@
     "check": "tsc && jest --coverage && npm run build && npm run e2e::ci"
   },
   "dependencies": {
+    "@svgr/webpack": "^5.5.0",
     "@testing-library/react": "^11.2.2",
     "@types/node": "^14.14.10",
     "@types/react": "^17.0.0",
