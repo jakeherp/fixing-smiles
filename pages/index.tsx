@@ -8,7 +8,9 @@ export default function Home() {
 			<div className="text-center md:text-left">
 				<h2 className="text-lg font-semibold">Dra. Dulce Maria Cid Paz</h2>
 				<div className="text-primary">Dentista</div>
-				<div className="text-gray-600">Twitter: @fixingsmilesmx</div>
+				<div className="text-gray-600">
+					Twitter: <a href="#">@fixingsmilesmx</a>
+				</div>
 				<div className="text-gray-600">www.dentistatoluca.mx</div>
 			</div>
 		</div>

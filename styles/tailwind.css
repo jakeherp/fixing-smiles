@@ -1,5 +1,8 @@
-/* purgecss start ignore */
 @tailwind base;
 @tailwind components;
-/* purgecss end ignore */
+
+a {
+  @apply border-b-2 transition hover:border-primary;
+}
+
 @tailwind utilities;
