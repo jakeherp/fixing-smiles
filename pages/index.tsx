@@ -1,22 +1,46 @@
+import Head from 'next/head';
+import Image from 'next/image';
 import Layout from 'components/Layout';
 
 export default function Home() {
 	return (
-		<Layout>
-			<div className="md:flex bg-white rounded-lg p-24 justify-center">
-				<img
-					className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
-					src="/dulce.jpg"
+		<>
+			<Head>
+				<title>Dentista Toluca Fixing Smiles - Consultorio Dental</title>
+				<meta
+					name="description"
+					content="Fixing Smiles es su dentista privado en Toluca de Lerdo, Estado de México. Es un placer para nosotros proporcionar el mejor servicio a nuestros pacientes."
 				/>
-				<div className="text-center md:text-left">
-					<h2 className="text-lg font-semibold">Dra. Dulce Maria Cid Paz</h2>
-					<div className="text-primary">Dentista</div>
-					<div className="text-gray-600">
-						Twitter: <a href="#">@fixingsmilesmx</a>
+			</Head>
+			<Layout>
+				<section id="inicio" className="background-primary h-auto py-24">
+					<div className="flex flex-col-reverse md:flex-row container-sm mx-auto gap-20">
+						<div>
+							<h1 className="text-primary font-bold text-4xl">
+								Bienvenido al dentista Fixing&nbsp;Smiles en Toluca
+							</h1>
+							<p className="mt-4 text-lg">
+								En Fixing Smiles disponemos de un equipo profesional de
+								dentistas altamente calificados, comprometidos en ofrecerte un
+								servicio de calidad con tecnología de avanzada.
+							</p>
+						</div>
+						<div className="w-2/3">
+							<div className="relative w-96 h-96">
+								<Image
+									src="/dulce.jpg"
+									layout="fill"
+									className="rounded-lg shadow-lg"
+								/>
+							</div>
+							<span className="font-semibold mt-4 block">
+								Dra. Dulce Maria Cid Paz
+							</span>
+							<em>Dentista</em>
+						</div>
 					</div>
-					<div className="text-gray-600">www.dentistatoluca.mx</div>
-				</div>
-			</div>
-		</Layout>
+				</section>
+			</Layout>
+		</>
 	);
 }

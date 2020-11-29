@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import StructuredData from 'components/StructuredData';
 
 import '../styles/tailwind.css';
 
@@ -11,7 +12,7 @@ function MyApp({ Component, pageProps }) {
 					href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
 					rel="stylesheet"
 				/>
-				<title></title>
+				<StructuredData />
 			</Head>
 			<Component {...pageProps} />
 		</>

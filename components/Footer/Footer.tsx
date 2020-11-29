@@ -34,9 +34,15 @@ const Footer = () => {
 							</li>
 							<li>
 								<h3>Telefóno</h3>
-								<p>(722) 494 0675</p>
+								<p>
+									<a href="tel:+5217224940675">(722) 494 0675</a>
+								</p>
 								<h3 className="mt-4">Horarios</h3>
-								<p>Lun - Sab: 9:00 am - 6:00 pm</p>
+								<p>
+									Lun - Sab:
+									<br className="md:hidden" />
+									<span> 9:00 am - 6:00 pm</span>
+								</p>
 							</li>
 						</ul>
 					</div>
@@ -58,7 +64,7 @@ const Footer = () => {
 					</ul>
 				</div>
 			</div>
-			<div className="border-t-2 mt-8 pt-8 flex justify-between">
+			<div className="border-t-2 border-gray-100 mt-8 pt-8 flex justify-between">
 				<ul className="flex">
 					<li className="mr-4">
 						<a

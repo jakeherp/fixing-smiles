@@ -15,6 +15,9 @@ module.exports = {
 			fontFamily: {
 				sans: ['Quicksand', 'sans-serif'],
 			},
+			height: {
+				'128': '32rem',
+			},
 		},
 	},
 	variants: {

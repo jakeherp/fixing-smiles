@@ -17,4 +17,16 @@ h3 {
   @apply font-semibold mb-1;
 }
 
+.container-sm {
+  width: 90%;
+  max-width: 960px;
+}
+
+.background-primary {
+  background-image: url('/bg-01.svg');
+  background-size: contain;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
 @tailwind utilities;
