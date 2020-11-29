@@ -1,8 +1,20 @@
 @tailwind base;
 @tailwind components;
 
+body {
+  @apply text-black;
+}
+
 a {
   @apply border-b-2 transition hover:border-primary;
+}
+
+.shadow-brand {
+  box-shadow: rgb(97, 180, 192) 0 0 3rem;
+}
+
+h3 {
+  @apply font-semibold mb-1;
 }
 
 @tailwind utilities;
